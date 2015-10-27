@@ -22,6 +22,9 @@
      c-c++
      emacs-lisp
      git
+     ;; (haskell :variables haskell-enable-shm-support t
+     ;;          haskell-enable-ghci-ng-support t
+     ;;          haskell-enable-hindent-style "andrew-gibiansky")
      haskell
      javascript
      markdown
