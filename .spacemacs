@@ -162,6 +162,8 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+  (add-to-list 'exec-path "~/.local/bin")
   )
 
 (defun dotspacemacs/config ()
@@ -217,7 +219,9 @@ layers configuration."
    (quote
     ("#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3")))
  '(magit-diff-use-overlays nil)
- '(package-selected-packages (quote (evil-leader evil use-package bind-key dash)))
+ '(package-selected-packages
+   (quote
+    (spaceline restart-emacs helm-flx helm-company evil-mc auto-compile solarized-theme toc-org smeargle shell-pop pyvenv pytest pyenv-mode powerline pcre2el paradox org-pomodoro neotree mmm-mode macrostep linum-relative leuven-theme js2-refactor js2-mode info+ ido-vertical-mode hy-mode hindent helm-themes helm-swoop helm-pydoc helm-projectile helm-make helm-descbinds helm-c-yasnippet helm-ag google-translate golden-ratio git-timemachine gh-md flycheck-haskell expand-region exec-path-from-shell evil-search-highlight-persist evil-nerd-commenter evil-matchit evil-jumper evil-indent-textobject evil-escape elisp-slime-nav diff-hl company-quickhelp company-ghc company-cabal company-c-headers company-anaconda coffee-mode cmake-mode clean-aindent-mode clang-format auto-yasnippet anaconda-mode aggressive-indent ace-window ace-link dash-functional tern company highlight anzu iedit smartparens flycheck yasnippet helm parent-mode json-reformat magit markdown-mode s spray spacemacs-theme org-plus-contrib magit-gitflow gnuplot eshell-prompt-extras esh-help disaster define-word which-key quelpa package-build evil-leader evil use-package bind-key dash)))
  '(paradox-github-token t)
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
