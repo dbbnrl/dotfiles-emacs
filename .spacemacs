@@ -164,6 +164,8 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+  (add-to-list 'exec-path "~/.local/bin")
   )
 
 (defun dotspacemacs/config ()
