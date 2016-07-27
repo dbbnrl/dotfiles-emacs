@@ -87,7 +87,7 @@ before layers configuration."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Hasklig"
+   dotspacemacs-default-font '("Source Code Pro"
                                :size 15
                                :weight normal
                                :width normal
@@ -186,7 +186,9 @@ layers configuration."
  '(ahs-idle-interval 0.25)
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
- '(package-selected-packages (quote (evil-leader evil use-package bind-key dash)))
+ '(package-selected-packages
+   (quote
+    (spacemacs-theme spaceline restart-emacs pyvenv pytest pyenv-mode paradox org-plus-contrib neotree leuven-theme js2-refactor js2-mode highlight-parentheses helm-flx helm-ag gh-md flycheck-pos-tip flx-ido fill-column-indicator evil-mc diff-hl buffer-move auto-yasnippet auto-compile ac-ispell smartparens flycheck haskell-mode yasnippet company helm helm-core magit markdown-mode which-key quelpa package-build ws-butler persp-mode lorem-ipsum evil-magit ace-jump-helm-line evil-leader evil use-package bind-key dash)))
  '(ring-bell-function (quote ignore))
  '(vhdl-basic-offset 4))
 (custom-set-faces
